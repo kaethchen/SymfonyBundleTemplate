@@ -1,0 +1,10 @@
+# IndexController
+template_home.index:
+    path:
+        de: /{_locale}
+        en: /
+        fr: /{_locale}
+        lb: /{_locale}
+    defaults: { _controller: 'template_home.controller.index::index', _locale: 'en' }
+    requirements:
+        _locale: '%locales%'
